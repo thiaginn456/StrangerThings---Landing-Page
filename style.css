@@ -131,7 +131,7 @@ header {
 
     .cards {
       display: flex;
-      background-image: url("/imagens/card1.webp");
+      background-image: url("imagens/card1.webp");
       width: 32%;
       aspect-ratio: 16/9;
       background-size: cover;
@@ -143,10 +143,10 @@ header {
   }
 
   .cards:nth-child(2) {
-    background-image: url("/imagens/card2.webp");
+    background-image: url("imagens/card2.webp");
   }
   .cards:nth-child(3) {
-    background-image: url("/imagens/card3.webp");
+    background-image: url("imagens/card3.webp");
   }
 }
 
