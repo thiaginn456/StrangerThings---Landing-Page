@@ -28,17 +28,17 @@ button {
   border: none;
   display: flex;
   align-items: center;
-  font-size: 1vw;
+  font-size: 24px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.9);
   padding-bottom: 4px;
   gap: 12px;
 }
-
+html,
 body {
   background-color: rgb(12, 1, 1);
   color: rgba(255, 255, 255, 0.9);
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 header {
@@ -175,13 +175,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+
   svg {
     width: 40%;
     height: auto;
     path {
-      stroke: rgb(163, 0, 0);
-      fill: rgba(163, 0, 0, 0.3);
+      stroke: rgba(163, 0, 0, 0.35);
+      fill: rgba(163, 0, 0, 0.19);
       stroke-dasharray: 1140;
       stroke-dashoffset: 1140;
     }
@@ -275,6 +278,9 @@ footer {
 }
 
 @media (max-width: 600px) {
+  button {
+    font-size: 12px;
+  }
   section {
     padding: 4vw;
   }
@@ -352,6 +358,18 @@ footer {
     }
   }
 
+  .section3 {
+    .patrocinio {
+      img:nth-child(1),
+      img:nth-child(3) {
+        width: 20%;
+      }
+      img:nth-child(2) {
+        width: 40%;
+      }
+    }
+  }
+
   footer {
     .contentFooter {
       padding-top: 60px;
@@ -387,6 +405,15 @@ footer {
       h3 {
         font-size: 50vw;
       }
+    }
+  }
+  #preloader {
+    svg {
+      path {
+        stroke-width: 4;
+      }
+      width: 60%;
+      height: auto;
     }
   }
 }
